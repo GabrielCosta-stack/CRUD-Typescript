@@ -1,0 +1,16 @@
+{
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "password",
+    "database": "shop",
+    "entities": ["./src/models/products/typeorm/entities/*.ts"],
+    "migrations" : [ 
+           "./src/database/typeorm/migrations/*.ts"
+    ],
+    "cli": {
+        "migrationsDir": "./src/database/typeorm/migrations"
+    }
+    
+}
